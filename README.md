@@ -105,7 +105,7 @@ Assessment of the MultiQC report across all four samples (IP_rep1, IP_rep2, Inpu
 ### Signal Intensity Profiles *(images not available)*
 deepTools `computeMatrix` + `plotProfile` were used to visualize read enrichment across gene bodies in IP_rep1 and IP_rep2. Both replicates showed strong signal enrichment at the **transcription start site (TSS)**, consistent with RUNX1's known role as a promoter-binding transcription factor.
 
-### Motif Enrichment *(table not available)*
+### Motif Enrichment
 HOMER motif analysis on filtered peaks revealed:
 - Strong enrichment for **RUNX family motifs** (RUNX1, RUNX2, RUNX-AML) — present in >30.5% of target sequences vs. background, confirming on-target ChIP enrichment.
 - Enrichment of **Forkhead family factors** (FOXA1, FOXA2, FOXM1), suggesting cooperative regulatory activity.
@@ -118,7 +118,7 @@ The notebook replicates key figures from the original publication:
 - **Figure 2F (RUNX1-bound DEGs):** RNA-seq data (MCF-7 shRUNX1 vs. shNS) was downloaded from GEO and intersected with ChIP-seq peaks to quantify RUNX1 binding at differentially expressed genes (±5 kb TSS and ±20 kb gene body). Fewer overlaps were found compared to the paper, likely due to differences in gene boundary definitions, annotation tools, or peak sets used.
 - **Read count table (Supplementary Table S2A):** Raw and mapped read counts were compared across samples. INPUT_rep2 showed notably lower sequencing depth (~10.9M reads) and missing mapped read data in MultiQC output.
 
-### Pathway Enrichment *(images not available)*
+### Pathway Enrichment
 Promoter-TSS annotated peaks were extracted and gene names submitted to **Enrichr** for pathway analysis against KEGG and Reactome databases. Top enriched pathways included:
 - **Reactome:** "Formation of WDR5-containing Histone-Modifying Complexes", "Gene Expression", "RNA Transport"
 - **KEGG:** Cellular senescence, autophagy
